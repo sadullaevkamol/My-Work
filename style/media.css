@@ -1,0 +1,124 @@
+@media(prefers-color-scheme: dark) {
+    :root {
+        --primary-background: #151437;
+        --primary-text-color: #FFFFFF;
+    }
+    
+    .header__nav-logo::before {
+        content: url(../images/logo-dark.png);
+    }
+    
+    body {
+        background: var(--primary-background);
+    } 
+    
+    .header__content-text, .header__toggler-icon {
+        color: var(--primary-text-color);
+    }
+    
+    .main__about-content {
+        background: var(--primary-background);
+    }
+    
+    .main__about-description {
+        color: var(--primary-text-color);
+    }
+    
+    .accordion-button.collapsed {
+        background: var(--primary-background) !important;
+    }
+    
+    .main__works-link {
+        background-color: var(--primary-background);
+    }
+    
+    .main__works-link.active {
+        color: var(--primary-background);
+    }
+    
+    .main__works-content{
+        background-color: var(--primary-background);
+    }
+    
+    .main__works-text {
+        color: var(--primary-text-color);
+    }
+    
+    .footer__link, .footer__contact{
+        color: var(--primary-text-color);
+    }
+}
+
+@media (max-width: 990px) {
+    .header__nav-link, .header__nav-button {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    
+    .main__about-content {
+        margin-top: 30px;
+    }
+    
+    .rectangle, .shape {
+        display: none;
+    }
+    
+    .main__about-text {
+        left: 240px;
+        top: 0;
+    }
+    
+    .accordion {
+        margin-bottom: 25px;
+    }
+    
+    .main__works-content {
+        margin-top: 30px;
+    }
+}
+
+@media (max-width: 964px) {
+    .main__about-img {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .main__works-img {
+        object-fit: contain;
+    }
+}
+
+@media (max-width: 475px) {
+    .main__about-text {
+        padding: 20px;
+        font-size: 16px;
+        top: -20px;
+        left: 35px;
+    }
+    
+    .main__about-img {
+        width: 100%;
+    }
+    
+    .main__about-link {
+        margin: 0 auto;
+    }
+    
+    .main__works-name {
+        margin-top: 20px;
+    }
+    
+    .main__about-title {
+        line-height: 45px;
+    }
+}
+
+@media (max-width: 375px) {
+    .header__skills-title {
+        font-size: 16px;
+    }
+    
+    .footer__contact {
+        font-size: 20px;
+    }
+}
